@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de costs</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+
+</head>
+<body>
+    <p>Introduce el listado con los <b>gastos</b><br><i>(atención con los formatos posibles! Ver placeholder):<i><br></p>
+    
+    <form>
+        <label for="fname"></label>
+       <!-- <input type="text" id="formulari" placeholder = "Pepe debe a Carlos - 23"><br><br>-->
+        <textarea id="latextarea" 
+        placeholder = "pepe debe a marta -- 3€ (salmon)
+marta debe a pepe -- 9 euros (pepinete)
+pepe debe a Marta -- 12e
+Pepe debe a Marta -- 12.3 e (salmoncito 24.6/2 = 12.3)
+pepe debe a Marta -- 20,9 e (queviures)
+[...]"></textarea>
+      </form>
+    <div id="div_boto">
+        <button id = "botonet" onclick="mostraDeutes()">Calcula</button>
+    </div>  
+
+    <div id = "output"><p id = "textSortida"></p></div>
+</body>
+</html>

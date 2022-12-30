@@ -1,0 +1,21 @@
+#latextarea { 
+    width: 98%; 
+    height: calc(50vh - 50px); /* 50% of del tamany del viewport menys 20 pixels */
+    border: 1px solid #999999; 
+    padding: 5px;
+}
+
+#botonet {
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+}
+
+#div_boto, p, #output {
+    text-align: center;
+}
+
+#textSortida {
+    color: red;
+}
+
