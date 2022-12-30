@@ -1,3 +1,3 @@
-##TODO
+# SEE WEBSITE
 
-This program is a cost parser. To do!
+[https://blackcub3s.github.io/costParser/](https://blackcub3s.github.io/costParser/)
