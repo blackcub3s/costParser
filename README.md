@@ -5,11 +5,11 @@
 
 This website has been created to allow two people to track debts against each other. Yoy can test it here [https://blackcub3s.github.io/costParser/](https://blackcub3s.github.io/costParser/). It works simply by copy and pasting a list of accumulated debts using a format similar to the following:
 
-    - pepe debe a marta -- 3€ (salmon)
-    - marta debe a pepe -- 9 euros (pepinete)
-    - pepe debe -- 12e
-    - Pepe debe a Marta -- 12.3 e (salmoncito 24.6/2 = 12.3)
-    - pepe debe a Marta -- 20,9 e (queviures)
+    pepe debe a marta -- 3€ (salmon)
+    marta debe a pepe -- 9 euros (pepinete)
+    pepe debe -- 12e
+    Pepe debe a Marta -- 12.3 e (salmoncito 24.6/2 = 12.3)
+    pepe debe a Marta -- 20,9 e (queviures)
 
 ## considerations
 
