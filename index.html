@@ -17,12 +17,21 @@
         <label for="fname"></label>
        <!-- <input type="text" id="formulari" placeholder = "Pepe debe a Carlos - 23"><br><br>-->
         <textarea id="latextarea" 
-        placeholder = "pepe debe a marta -- 3€ (salmon)
-marta debe a pepe -- 9 euros (pepinete)
-pepe debe a Marta -- 12e
-Pepe debe a Marta -- 12.3 e (salmoncito 24.6/2 = 12.3)
-pepe debe a Marta -- 20,9 e (queviures)
-[...]"></textarea>
+        placeholder = "Ejemplos de líneas interpretables por el programa:
+        
+P1 debe a P2 -- 3€ (comentarios)
+p2 debe a p1 -- 9 euros (comentarios)
+P1 debe a P2 -- 12,3e
+P2 debe -- 12,4 e
+
+        [...]
+
+Para su uso correcto se requiere: 
+
+* '--' como separador entre deudores y precio
+* usar símbolo € o 'e' después del precio
+* máximo dos personas (p1 y p2)
+* la persona que aparezca primero en cada línea debe tener el nombre escrito de forma correcta en el texto"></textarea>
       </form>
     <div id="div_boto">
         <button id = "botonet" onclick="mostraDeutes()">Calcula</button>
