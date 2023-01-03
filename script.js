@@ -86,23 +86,23 @@ function DeutesParcials(paquetet) {
     str_sum_d2 = str_sum_d2.slice(0, str_sum_d2.length - 2); //elimino el vestigi de la suma del final
 
     //POSEM PARENTESIS I O SIMBOLS D'EURO A LA TIRALLONGA DE CALCULS PER AL DEUDOR 1
-    if (n > 1)  str_sum_d1 = "(" + str_sum_d1 + ") € = <b>"+Math.round(sum_d1*100) / 100+"</b> €";
+    if (n > 1)  str_sum_d1 = "(" + str_sum_d1 + ") € = <u><b>"+Math.round(sum_d1*100) / 100+"</b></u> €";
     else        str_sum_d1 = "<b>"+str_sum_d1+"</b> €";  //cas que nomes hi ha un deute pel deudor 1 (n==1)
     
     //POSEM PARENTESIS I O SIMBOLS D'EURO A LA TIRALLONGA DE CALCULS PER AL DEUDOR 1
-    if (m > 1)  str_sum_d2 = "(" + str_sum_d2 + ") € = <b>"+Math.round(sum_d2*100) / 100+"</b> €";
+    if (m > 1)  str_sum_d2 = "(" + str_sum_d2 + ") € = <u><b>"+Math.round(sum_d2*100) / 100+"</b></u> €";
     else        str_sum_d2 = "<b>"+str_sum_d2 + "</b> €";  //cas que nomes hi ha un deute pel deudor 2
 
     var judici_d1 = deudor1 +" debe a "+deudor2+" = "+ str_sum_d1;
     var judici_d2 = deudor2 +" debe a "+deudor1+" = "+ str_sum_d2;
     if (sum_d1 > sum_d2) {
-        return judici_d1+"<br>"+judici_d2+'<p style="color:green"><br><br>DEUDA NETA: '+deudor1+" debe pagar <b>"+(Math.round((sum_d1 - sum_d2) * 100) / 100).toString()+'</b></p>';
+        return judici_d1+"<br>"+judici_d2+'<p style="color:orange"><br>DEUDA NETA: '+deudor1+" debe pagar <b>"+(Math.round((sum_d1 - sum_d2) * 100) / 100).toString()+'</b></p>';
     }
     else if (sum_d2 > sum_d1) {
-        return judici_d2+"<br>"+judici_d1+'<p style="color:green"><br><br>DEUDA NETA: '+deudor2+" debe pagar <b>"+(Math.round((sum_d2 - sum_d1) * 100) / 100).toString()+'</b></p>';
+        return judici_d2+"<br>"+judici_d1+'<p style="color:orange"><br>DEUDA NETA: '+deudor2+" debe pagar <b>"+(Math.round((sum_d2 - sum_d1) * 100) / 100).toString()+'</b></p>';
     }
     else {
-        return judici_d2+"<br>"+judici_d1+'<br>Nadie debe nada a nadie :D';
+        return judici_d2+"<br>"+judici_d1+'<p style="color:green"><br>Nadie debe nada a nadie :D</p>';
     }
     
     
