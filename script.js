@@ -96,10 +96,10 @@ function DeutesParcials(paquetet) {
     var judici_d1 = deudor1 +" debe a "+deudor2+" = "+ str_sum_d1;
     var judici_d2 = deudor2 +" debe a "+deudor1+" = "+ str_sum_d2;
     if (sum_d1 > sum_d2) {
-        return judici_d1+"<br>"+judici_d2+'<br><br>DEUDA NETA: '+deudor1+" debe pagar "+(sum_d1 - sum_d2).toString();
+        return judici_d1+"<br>"+judici_d2+'<br><br>DEUDA NETA: '+deudor1+" debe pagar "+(Math.round((sum_d1 - sum_d2) * 100) / 100).toString();
     }
     else if (sum_d2 > sum_d1) {
-        return judici_d2+"<br>"+judici_d1+'<br><br>DEUDA NETA: '+deudor2+" debe pagar "+(sum_d2 - sum_d1).toString();
+        return judici_d2+"<br>"+judici_d1+'<br><br>DEUDA NETA: '+deudor2+" debe pagar "+(Math.round((sum_d2 - sum_d1) * 100) / 100).toString();
     }
     else {
         return judici_d2+"<br>"+judici_d1+'<br>Nadie debe nada a nadie :D';
